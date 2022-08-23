@@ -1,14 +1,15 @@
 Package: UScensuscounty20
-Title: Provides access to the 2020 county data for various states
+Title: Provides county level data for the 2020 United States census
 Version: 0.0.0.9000
 Authors@R: 
     c(person("shreshtha", "modi", 
     email="modishreshtha48@gmail.com", role = c( "cre")))
-Description: Provides the access to redistricting files US Census 2020 at the county level for various states.
+Description:  A data package for the US census 2020 package. Provides county level data and related shapefiles
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.0
-Depends: 
-    R (>= 2.10)
+RoxygenNote: 7.2.1
 LazyData: true
+LazyDataCompression: xz
+Imports: 
+    sf

@@ -1,9 +1,4 @@
-## code to prepare `DATASET` dataset goes here
-library(dplyr)
-library(devtools)
-library(sf)
-sapply(list.files(pattern="[.]R$", path="/home/smodi/load_data_county.R", full.names=TRUE), source);
-source("/home/smodi/load_data_county.R")
+#The code in here has been kept seprate for each state purposely so that future changes can be applied easily
 #Alabama
 load_data_county(header_file_path =  "/home/smodi/Data/Alabama/algeo2020.pl",part1_file_path = "/home/smodi/Data/Alabama/al000012020.pl",part2_file_path = "/home/smodi/Data/Alabama/al000022020.pl",part3_file_path = "/home/smodi/Data/Alabama/al000032020.pl",state="alabama",url = "https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/01_ALABAMA/01/tl_2020_01_county20.zip",file = 'tl_2020_01_county20.shp')
 usethis::use_data(alabamacounty20, overwrite = TRUE)
@@ -129,8 +124,12 @@ load_data_county(header_file_path =  "/home/smodi/Data/New Jersey/njgeo2020.pl",
 usethis::use_data(newjerseycounty20,overwrite = TRUE)
 
 #New mexico
-load_data_county(header_file_path =  "/home/smodi/Data/New Mexico/nmgeo2020.pl",part1_file_path = "/home/smodi/Data/New Mexico/nm000012020.pl",part2_file_path = "/home/smodi/Data/New Mexico/nm000022020.pl",part3_file_path = "/home/smodi/Data/New Mexico/nm000032020.pl",state="newmexico",url = "https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/35_NEW_MEXICO/35/tl_2020_35_county20.zip",file = 'tl_2020_35_county20.shp')
-usethis::use_data(newmexicocounty20,overwrite = TRUE)
+load_data_county(header_file_path =  "/home/smodi/Data/nmgeo2020.pl",part1_file_path = "/home/smodi/Data/nm000012020.pl",part2_file_path = "/home/smodi/Data/nm000022020.pl",part3_file_path = "/home/smodi/Data/nm000032020.pl",state="newmexico",url = "https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/35_NEW_MEXICO/35/tl_2020_35_county20.zip",file = 'tl_2020_35_county20.shp')
+Encoding(newmexicocounty20$NAME) <- "latin1"
+newmexicocounty20$NAME
+Encoding(newmexicocounty20$BASENAME) <- "latin1"
+newmexicocounty20$BASENAME
+save(newmexicocounty20,file="newmexicocounty20.rda")
 
 #New York
 load_data_county(header_file_path =  "/home/smodi/Data/New York/nygeo2020.pl",part1_file_path = "/home/smodi/Data/New York/ny000012020.pl",part2_file_path = "/home/smodi/Data/New York/ny000022020.pl",part3_file_path = "/home/smodi/Data/New York/ny000032020.pl",state="newyork",url = "https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/36_NEW_YORK/36/tl_2020_36_county20.zip",file = 'tl_2020_36_county20.shp')
@@ -161,9 +160,12 @@ load_data_county(header_file_path =  "/home/smodi/Data/Pennsylvania/pageo2020.pl
 usethis::use_data(pennsylvaniacounty20,overwrite = TRUE)
 
 #Puerto Ricp
-load_data_county(header_file_path =  "/home/smodi/Data/Puerto rico/prgeo2020.pl",part1_file_path = "/home/smodi/Data/Puerto rico/pr000012020.pl",part2_file_path = "/home/smodi/Data/Puerto rico/pr000022020.pl",part3_file_path = "/home/smodi/Data/Puerto rico/pr000032020.pl",state="puertorico",url = "https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/72_PUERTO_RICO/72/tl_2020_72_county20.zip",file = 'tl_2020_72_county20.shp')
-usethis::use_data(puertoricocounty20,overwrite = TRUE)
-
+load_data_county(header_file_path =  "/home/smodi/Data/prgeo2020.pl",part1_file_path = "/home/smodi/Data/pr000012020.pl",part2_file_path = "/home/smodi/Data/pr000022020.pl",part3_file_path = "/home/smodi/Data/pr000032020.pl",state="puertorico",url = "https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/72_PUERTO_RICO/72/tl_2020_72_county20.zip",file = 'tl_2020_72_county20.shp')
+Encoding(puertoricocounty20$NAME) <- "latin1"
+puertoricocounty20$NAME
+Encoding(puertoricocounty20$BASENAME) <- "latin1"
+puertoricocounty20$BASENAME
+save(puertoricocounty20,file="puertoricocounty20.rda")
 #Rhode Islands
 load_data_county(header_file_path =  "/home/smodi/Data/Rhode Island/rigeo2020.pl",part1_file_path = "/home/smodi/Data/Rhode Island/ri000012020.pl",part2_file_path = "/home/smodi/Data/Rhode Island/ri000022020.pl",part3_file_path = "/home/smodi/Data/Rhode Island/ri000032020.pl",state="rhodeisland",url = "https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/44_RHODE_ISLAND/44/tl_2020_44_county20.zip",file = 'tl_2020_44_county20.shp')
 usethis::use_data(rhodeislandcounty20,overwrite = TRUE)
@@ -203,4 +205,5 @@ usethis::use_data(wisconsincounty20,overwrite = TRUE)
 #Wyoming
 load_data_county(header_file_path =  "/home/smodi/Data/Wyoming/wygeo2020.pl",part1_file_path = "/home/smodi/Data/Wyoming/wy000012020.pl",part2_file_path = "/home/smodi/Data/Wyoming/wy000022020.pl",part3_file_path = "/home/smodi/Data/Wyoming/wy000032020.pl",state="utah",url = "https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/56_WYOMING/56/tl_2020_56_county20.zip",file = 'tl_2020_56_county20.shp')
 usethis::use_data(wyomingcounty20,overwrite = TRUE)
+
 

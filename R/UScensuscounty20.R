@@ -1,8 +1,7 @@
-#' @title UScensuscounty20
+#' UScensuscounty20
 #' This package contains county level data for the US census 2020 redistricting files and shape files.
-#' @usage data((statename)county20)
 #' \describe{
-#'   \item{\code{FILEID}} {File Identification}
+#'   \item{\code{FILEID}}{File Identification}
 #'   \item{\code{STUSAB}}{State/US-Abbreviation (USPS)}
 #'   \item{\code{SUMLEV}}{Summary Level=050 for county}
 #'   \item{\code{GEOVAR}}{Geographic Variant}
@@ -10,7 +9,7 @@
 #'   \item{\code{CHARITER}}{Characteristic Iteration}
 #'   \item{\code{CIFSN}}{Characteristic Iteration File Sequence Number}
 #'   \item{\code{LOGRECNO}}{Logical Record Number}
-#'   \item{\code{GEOID}} {Geographic Record Identifier}
+#'   \item{\code{GEOID}}{Geographic Record Identifier}
 #'   \item{\code{GEOCODE}}{Geographic Code Identifier}
 #'   \item{\code{REGION}}{Region}
 #'   \item{\code{DIVISION}}{Division}
@@ -404,110 +403,114 @@
 #'   \item{\code{geometry}}{Geometric data for the shape. (Point, Multipoint, Polyline, Polygon,etc)}
 #' }
 #' @source \url{https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/}
-#' @name "UScensuscounty20"
+#' @name UScensuscounty20
 #' @keywords datasets
- "UScensuscounty20"
- #' @rdname alabamacounty20
- "alabamacounty20"
- #' @rdname alaskacounty20
- "alaskacounty20"
- #' @rdname arizonacounty20
- "arizonacounty20"
- #' @rdname arkansascounty20
- "arkansascounty20"
- #' @rdname californiacounty20
- "californiacounty20"
- #' @rdname coloradocounty20
- "coloradocounty20"
- #' @rdname connecticutcounty20
- "connecticutcounty20"
- #' @rdname delawarecounty20
- "delawarecounty20"
- #' @rdname dccounty20
- "dccounty20"
- #' @rdname floridacounty20
- "floridacounty20"
- #' @rdname georgiacounty20
- "georgiacounty20"
- #' @rdname hawaiicounty20
- "hawaiicounty20"
- #' @rdname idahocounty20
- "idahocounty20"
- #' @rdname illinoiscounty20
- "illinoiscounty20"
- #' @rdname indianacounty20
- "indianacounty20"
- #' @rdname iowacounty20
- "iowacounty20"
- #' @rdname kansascounty20
- "kansascounty20"
- #' @rdname kentuckycounty20
- "kentuckycounty20"
- #' @rdname louisianacounty20
- "louisianacounty20"
- #' @rdname mainecounty20
- "mainecounty20"
- #' @rdname marylandcounty20
- "marylandcounty20"
- #' @rdname massachussetscounty20
- "massachussetscounty20"
- #' @rdname michigancounty20
- "michigancounty20"
- #' @rdname minnesotacounty20
- "minnesotacounty20"
- #' @rdname mississipicounty20
- "mississipicounty20"
- #' @rdname missouricounty20
- "missouricounty20"
- #' @rdname montanacounty20
- "montanacounty"
- #' @rdname nebraskacounty20
- "nebraskacounty20"
- #' @rdname nevadacounty20
- "nevadacounty20"
- #' @rdname newhampshirecounty20
- "newhampshirecounty20"
- #' @rdname newjerseycounty20
- "newjerseycounty20"
- #' @rdname newmexicocounty20
- "newmexicocounty20"
- #' @rdname newyorkcounty20
- "newyorkcounty20"
- #' @rdname northcarolinacounty20
- "northcarolinacounty20"
- #' @rdname northdakotacounty20
- "northdakotacounty20"
- #' @rdname ohiocounty20
- "ohiocounty20"
- #' @rdname oklahomacounty20
- "oklahomacounty20"
- #' @rdname oregoncounty20
- "oregoncounty20"
- #' @rdname pennsylvaniacounty20
- "pennsylvaniacounty20"
- #' @rdname puertoricocounty20
- "puertoricocounty20"
- #' @rdname rhodeislandcounty20
- "rhodeislandcounty20"
- #' @rdname southcarolinacounty20
- "southcarolinacounty20"
- #' @rdname southdakotacounty20
- "southdakotacounty20"
- #' @rdname tennessecounty20
- "tennessecounty20"
- #' @rdname texascounty20
- "texascounty20"
- #' @rdname utahcounty20
- "utahcounty20"
- #' @rdname vermontcounty20
- "vermontcounty20"
- #' @rdname virginiacounty20
- "virginiacounty20"
- #' @rdname washingtoncounty20
- "washingtoncounty20"
- #' @rdname westvirginiacounty20
- "westvirginiacounty20"
- #' @rdname wisconsincounty20
- "wisconsincounty20"
- #' @rdname wyomingcounty20
- "wyomingcounty20"
+NULL
+#' @rdname UScensuscounty20
+"alabamacounty20"
+#' @rdname UScensuscounty20
+"alaskacounty20"
+#' @rdname UScensuscounty20
+"arizonacounty20"
+#' @rdname UScensuscounty20
+"arkansascounty20"
+#' @rdname UScensuscounty20
+"californiacounty20"
+#' @rdname UScensuscounty20
+"coloradocounty20"
+#' @rdname UScensuscounty20
+"connecticutcounty20"
+#' @rdname UScensuscounty20
+"delawarecounty20"
+#' @rdname UScensuscounty20
+"dccounty20"
+#' @rdname UScensuscounty20
+"floridacounty20"
+#' @rdname UScensuscounty20
+"georgiacounty20"
+#' @rdname UScensuscounty20
+"hawaiicounty20"
+#' @rdname UScensuscounty20
+"idahocounty20"
+#' @rdname UScensuscounty20
+"illinoiscounty20"
+#' @rdname UScensuscounty20
+"indianacounty20"
+#' @rdname UScensuscounty20
+"iowacounty20"
+#' @rdname UScensuscounty20
+"kansascounty20"
+#' @rdname UScensuscounty20
+"kentuckycounty20"
+#' @rdname UScensuscounty20
+"louisianacounty20"
+#' @rdname UScensuscounty20
+"mainecounty20"
+#' @rdname UScensuscounty20
+"marylandcounty20"
+#' @rdname UScensuscounty20
+"massachussetscounty20"
+#' @rdname UScensuscounty20
+"michigancounty20"
+#' @rdname UScensuscounty20
+"minnesotacounty20"
+#' @rdname UScensuscounty20
+"mississippicounty20"
+#' @rdname UScensuscounty20
+"missouricounty20"
+#' @rdname UScensuscounty20
+"montanacounty20"
+#' @rdname UScensuscounty20
+"nebraskacounty20"
+#' @rdname UScensuscounty20
+"nevadacounty20"
+#' @rdname UScensuscounty20
+"newhampshirecounty20"
+#' @rdname UScensuscounty20
+"newjerseycounty20"
+#' @rdname UScensuscounty20
+"newmexicocounty20"
+#' @rdname UScensuscounty20
+"newyorkcounty20"
+#' @rdname UScensuscounty20
+"northcarolinacounty20"
+#' @rdname UScensuscounty20
+"northdakotacounty20"
+#' @rdname UScensuscounty20
+"ohiocounty20"
+#' @rdname UScensuscounty20
+"oklahomacounty20"
+#' @rdname UScensuscounty20
+"oregoncounty20"
+#' @rdname UScensuscounty20
+"pennsylvaniacounty20"
+#' @rdname UScensuscounty20
+"puertoricocounty20"
+#' @rdname UScensuscounty20
+"rhodeislandcounty20"
+#' @rdname UScensuscounty20
+"southcarolinacounty20"
+#' @rdname UScensuscounty20
+"southdakotacounty20"
+#' @rdname UScensuscounty20
+"tennessecounty20"
+#' @rdname UScensuscounty20
+"texascounty20"
+#' @rdname UScensuscounty20
+"utahcounty20"
+#' @rdname UScensuscounty20
+"vermontcounty20"
+#' @rdname UScensuscounty20
+"virginiacounty20"
+#' @rdname UScensuscounty20
+"washingtoncounty20"
+#' @rdname UScensuscounty20
+"westvirginiacounty20"
+#' @rdname UScensuscounty20
+"wisconsincounty20"
+#' @rdname UScensuscounty20
+"wyomingcounty20"
+#' @examples  
+#' plot(alabamacounty20$geometry)
+#'\dontrun{ plot(puertoricocounty20$geometry) }
+
